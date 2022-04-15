@@ -24,7 +24,7 @@ const deleteTuit = async (req, res) => {
   res.sendStatus(status);
 }
 
-module.exports = (app) => {
+export default (app) => {
   app.post('/api/tuits', createTuit);
   app.get('/api/tuits', findAllTuits);
   app.put('/api/tuits/:tid', updateTuit);
