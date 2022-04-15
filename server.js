@@ -12,9 +12,9 @@ mongoose.connect(CONNECTION_STRING);
 app.use(cors());
 app.use(express.json());
 
-require(helloController)(app);
-require(userController)(app);
-require(tuitsController)(app);
+helloController(app);
+userController(app);
+tuitsController(app);
 app.get('/hello', (req, res) => {res.send('Hello World!')})
 app.get('/', (req, res) => {res.send('Welcome to Full Stack Development!')})
 app.listen(process.env.PORT || 4000);
