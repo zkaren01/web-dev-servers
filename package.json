@@ -2,6 +2,9 @@
   "type": "module",
   "name": "full-stack-developer-server-node",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.1"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
