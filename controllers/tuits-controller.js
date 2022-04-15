@@ -1,4 +1,4 @@
-const tuitsDao = require('../tuits-dao.js');
+import * as tuitsDao from '../tuits-dao.js'
 
 const findAllTuits = async (req, res) => {
   const tuits = await tuitsDao.findAllTuits()
